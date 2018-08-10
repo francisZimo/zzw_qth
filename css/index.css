@@ -1,0 +1,350 @@
+body,html .padding-none{
+    padding:0;
+}
+body,html{
+    width:100%;
+    color:#333;
+    font-size: 14px;
+    font-family: Microsoft YaHei,Helvetica Neue,Tahoma,Arial,Hiragino Sans GB,SimSun,sans-serif;
+    /*overflow: hidden;*/
+}
+
+.ellipsis{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.content{
+    width:1200px;
+    margin:0 auto;
+}
+.content-title-wrapper{
+    text-align: center;
+    color:#2178d7;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+.head-banner{
+    width:100%;
+    height:auto;
+}
+.head-banner img{
+    max-width: 100%;
+}
+.content-title{
+    display: inline-block;
+    height:38px;
+    position:relative;
+}
+.content-title::before,.content-title::after{
+    content: "";
+    width:200px;
+    height:1px;
+    position: absolute;
+    top:18px;
+    background-color: #2178d7;
+}
+.content-title::before{
+    left:-250px;
+}
+.content-title::after{
+    right:-250px;
+}
+
+.content-title-wrapper .title-name{
+    display: inline-block;
+    position:relative;
+    font-size: 24px;
+}
+.title-name::before, .title-name::after{
+    content: '';
+    width:8px;
+    height:8px;
+    position:absolute;
+    border-radius: 50%;
+    background-color:#2178d7;
+    top:19px;
+    margin-top: -4px;
+}
+.title-name::before{
+    left:-22px;
+}
+.title-name::after{
+    right:-22px;
+}
+.qth-img{
+    width:100%;
+    position:relative;
+}
+.qth-img-bottom{
+    width:100%;
+}
+.qth-img-over{
+    position:absolute;
+    bottom:-42px;
+    right:-26px;
+}
+.qth-description{
+    font-size:14px;
+    padding-left:14px
+}
+.qth-description p{
+    color:#333;
+    text-indent: 30px;
+}
+.swiper-container{
+    width: 100%;
+}
+.videoNews img{
+   max-width: 100%;
+    height:auto;
+}
+.videoNews{
+   position: relative;
+
+
+}
+.videoNews-layer{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.videoNews-play{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-30px;
+    margin-left:-30px;
+    width:60px;
+    height:60px;
+    background:url('../img/videoPlay.png') 0 0 no-repeat;
+}
+
+.oldNews{
+    width:100%;
+    border:1px solid #d6e5e8;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+.oldNews:hover .oldNews-title{
+    color:#2178d7;
+    background-color: #fafafa;
+}
+.oldNews:hover .oldNews-content img{
+    transform: scale(1.1);
+}
+.oldNews-content{
+    width:100%;
+    height:196px;
+    overflow:hidden;
+}
+.oldNews-content img{
+    width:100%;
+    height:auto;
+    transition: all 1s;
+}
+.oldNews-title{
+    width:100%;
+    height:55px;
+    line-height: 55px;
+    padding-left:20px;
+    font-size:14px;
+}
+.news-tracking{
+    width:100%;
+    height:570px;
+
+}
+.newsT-title{
+    border-bottom: 2px solid #2079d7;
+}
+.newT-tip{
+    width:180px;
+    height:50px;
+    line-height: 50px;
+    color:#fff;
+    text-align: center;
+    font-size: 24px;
+    background: -webkit-linear-gradient(left, #0e5caf , #5ea3ef); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#0e5caf , #5ea3ef); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #0e5caf , #5ea3ef); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #0e5caf , #5ea3ef); /* 标准的语法（必须放在最后） */
+}
+.new-module{
+    margin-top:96px;
+}
+.newsT-content{
+    width:100%;
+    height:510px;
+    border: 1px solid #d6e6e6;
+    box-shadow: 5px 5px 30px  rgba(0,0,0,0.1);
+}
+.newsT-content-ul{
+    width:100%;
+    overflow:hidden;
+}
+.newsT-content-ul li{
+    float:left;
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    border-bottom: 1px solid #d4e6e8 ;
+    cursor:pointer;
+}
+.newsT-content-ul li:hover{
+    color:#2079d7;
+}
+.newsT-newsTitle{
+    width:80%;
+    float:left;
+    padding:0 15px;
+}
+.newsT-publisher{
+    width:20%;
+    float:left;
+    padding:0 15px;
+}
+.unitWraper{
+    width:100%;
+
+}
+.unitWraper li{
+    float:left;
+    width:100%;
+
+}
+.unitContent{
+    padding:15px;
+    text-align: center;
+}
+.unitHeadName{
+    width:100%;
+    height:44px;
+    line-height: 44px;
+    color:#fff;
+    background-color: #2078d9;
+    font-size: 24px;
+    text-align: center;
+}
+.unitContent img{
+    margin:0 auto;
+}
+.unitContent a{
+    color:#2078d9;
+    font-size: 16px;
+    text-decoration: underline;
+    margin:0 auto;
+}
+.unit-items{
+    text-align: left;
+    width:100%;
+    height:36px;
+    line-height: 36px;
+    font-size: 16px;
+    color:#333;
+}
+.media-support{
+    margin-top:86px;
+}
+.nT-content-wrapper{
+    padding:20px 15px;
+    border:1px solid #e1e1e1;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px  rgba(0,0,0,0.1);
+}
+
+.nT-content-wrapper span{
+    font-size:16px;
+    float:left;
+    padding:5px 10px;
+
+}
+.nT-content-wrapper span:last-child:after{
+    content: '';
+    clear: both;
+}
+.attend-unit{
+    margin-top:48px;
+}
+.map-zone{
+    width:100%;
+    height:350px;
+}
+
+footer{
+    height:380px;
+    width:100%;
+    background-color:#114388 ;
+}
+.zzw-info {
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.zzw-map-background{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background: url(../img/map-transparent.png) center center no-repeat;
+    opacity: 0.2;
+    z-index: 10;
+}
+.zzw-info-box{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.zzw-info-detail{
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow: hidden;
+
+}
+.zzw-info-wrapper{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+
+}
+.zzw-info-items{
+    width:100%;
+    height:36px;
+    line-height: 36px;
+    float:left;
+    text-align:left;
+    color:#fff;
+    font-size:16px;
+}
+.zzw-info-items:first-child{
+    height:72px;
+}
+.contact-title{
+    float:left;
+    width:70px;
+    display: inline-block;
+    text-align-last:justify;
+    text-align: justify;
+}
+.contact-name{
+    float:left;
+    height:72px;
+}
+.zzw-code-tip{
+    color:#fff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom:35px;
+}
+
+
