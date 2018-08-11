@@ -1,0 +1,47 @@
+.back-top{
+    position:fixed;
+    z-index:1000;
+    display: none;
+    right:20px;
+    bottom:30px;
+    height:40px;
+    width:40px;
+    text-align:center;
+    background-color: #2078d9;
+    overflow: hidden;
+    cursor: pointer;
+}
+.back-top:hover::before{
+    top:100%;
+}
+.back-top:hover .back-top-in{
+    visibility: hidden;
+}
+.back-top::before{
+    position:absolute;
+    top:0;
+    left:0;
+    transform: translate(0,-100%);
+    content:'回到顶部';
+    width:40px;
+    height:40px;
+    line-height: 20px;
+    font-size:14px;
+    color:#fff;
+    font-weight: bold;
+}
+.back-top-in{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    visibility: visible;
+    display: inline-block;
+    height:20px;
+    width:20px;
+    border:2px solid black;
+    border-color:white transparent transparent white;
+    transform:rotate(45deg) translate(25%,25%);
+}
