@@ -12,9 +12,12 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/cd-top.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=e0fa1a9286827251c84ccddfaebda47c"></script>
+
     <style>
         .qth-marker{
             position:relative;
@@ -43,9 +46,15 @@
 <header style="width:100%;">
     <div class="head-banner">
         <img src="./img/banner.jpg" alt="智招网-洽谈会">
+        <div class="signUp-online">
+            <ul class="signUp-lists">
+                <li>邀请函</li>
+                <li>网上报名</li>
+            </ul>
+        </div>
     </div>
 </header>
-<div class="container content">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class=" content-title-wrapper">
@@ -61,7 +70,7 @@
         <div class="col-md-6">
             <div class="qth-img">
                 <img class="qth-img-bottom"  src="./img/qiatanhui.jpg" alt="智招网-洽谈会">
-                <img class="qth-img-over" src="./img/qiatanhui-over_03.jpg" alt="智招网-洽谈会">
+                <img class="qth-img-over hidden-xs" src="./img/qiatanhui-over_03.jpg" alt="智招网-洽谈会">
             </div>
         </div>
         <div class="col-md-6">
@@ -83,7 +92,7 @@
 
         </div>
     </div>
-    <div class="row">
+    <div class="row videoNews-additional">
         <div class="col-md-12">
             <div class=" content-title-wrapper">
                 <div class="content-title">
@@ -125,11 +134,11 @@
 
                 </div>
                 <!--&lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
-                <!--<div class="swiper-pagination"></div>-->
+                <div class="swiper-pagination visible-xs"></div>
 
                 <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev hidden-xs"></div>
+                <div class="swiper-button-next hidden-xs"></div>
             </div>
             <!--<div class="swiper-pagination"></div>-->
         </div>
@@ -218,29 +227,30 @@
                 <div class="newsT-content">
                     <ul class="newsT-content-ul">
                         <li>
-                            <p class="newsT-newsTitle">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
-                            <span class="newsT-publisher">新华网发布</span>
+                            <p class="newsT-newsTitle ellipsis">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
+                            <span class="newsT-publisher ellipsis">新华网发布</span>
                         </li>
                         <li>
-                            <p class="newsT-newsTitle">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
-                            <span class="newsT-publisher">新华网发布</span>
+                            <p class="newsT-newsTitle ellipsis">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
+                            <span class="newsT-publisher ellipsis">新华网发布</span>
                         </li>
                         <li>
-                            <p class="newsT-newsTitle">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
-                            <span class="newsT-publisher">新华网发布</span>
+                            <p class="newsT-newsTitle ellipsis">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
+                            <span class="newsT-publisher ellipsis">新华网发布</span>
                         </li>
                         <li>
-                            <p class="newsT-newsTitle">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
-                            <span class="newsT-publisher">新华网发布</span>
+                            <p class="newsT-newsTitle ellipsis">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
+                            <span class="newsT-publisher ellipsis">新华网发布</span>
                         </li>
                         <li>
-                            <p class="newsT-newsTitle">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
-                            <span class="newsT-publisher">新华网发布</span>
+                            <p class="newsT-newsTitle ellipsis">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
+                            <span class="newsT-publisher ellipsis">新华网发布</span>
                         </li>
                         <li>
-                            <p class="newsT-newsTitle">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
-                            <span class="newsT-publisher">新华网发布</span>
+                            <p class="newsT-newsTitle ellipsis">促进中部崛起--商务部投资促进事务局重点项目推介会在合肥召开</p>
+                            <span class="newsT-publisher ellipsis">新华网发布</span>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -341,14 +351,14 @@
 
     </div>
 </div>
-<footer>
+<footer >
     <div class="zzw-info">
         <div class="zzw-map-background"></div>
         <div class="zzw-info-box">
             <div class="container " style="height:100%;">
-                <div class="col-md-8" style="height:100%;">
+                <div class="col-md-8 col-xs-8" style="height:100%;">
                     <div class="zzw-info-detail">
-                        <div class="zzw-info-wrapper">
+                        <div class="zzw-info-wrapper zzw-info-contact">
                             <div class="zzw-info-items"><span class="contact-title">联系人</span> <p class="contact-name">&nbsp;:&nbsp;黄先生(13501261050)
                                 <br>&nbsp; 杨女士（18600966806）</p></div>
                             <div class="zzw-info-items"><span class="contact-title">电话 </span>&nbsp;:&nbsp; 010-62984189/62980199/56292003</div>
@@ -359,9 +369,9 @@
 
                     </div>
                 </div>
-                <div class="col-md-4" style="height:100%;">
+                <div class="col-md-4 col-xs-4" style="height:100%;">
                     <div class="zzw-info-detail">
-                        <div class="zzw-info-wrapper">
+                        <div class="zzw-info-wrapper zzw-code-wrapper">
                             <div class="zzw-code">
                                 <p class="zzw-code-tip">扫码报名</p>
                                 <img src="./img/zzw-code.jpg" alt="智招网-二维码">
@@ -371,15 +381,37 @@
                 </div>
             </div>
         </div>
-
     </div>
 </footer>
+<div class="back-top" id="back-top">
+    <span class="back-top-in"></span>
+</div>
 <script>
+    function isPc(){  //判断是否为pc端
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    var slidesNumber=2;
+    if(!isPc()){
+        slidesNumber=1;
+    }
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
         autoplay:true,
         spaceBetween: 30,
-        slidesPerView : 2,
+        slidesPerView : slidesNumber,
 
         // 如果需要分页器
 //        pagination: {
@@ -419,9 +451,28 @@
         markerImg.className = "qth-marker-location";
         markerImg.src = "./img/map-location.png";
         markerContent.appendChild(markerImg);
-
-
-
+    }
+    var timer  = null;
+    var $backTop= document.getElementById('back-top');
+    $backTop.onclick = function(){
+        cancelAnimationFrame(timer);
+        timer = requestAnimationFrame(function fn(){
+            var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+            if(oTop > 0){
+                document.body.scrollTop = document.documentElement.scrollTop = oTop - 200;
+                timer = requestAnimationFrame(fn);
+            }else{
+                cancelAnimationFrame(timer);
+            }
+        });
+    }
+    window.onscroll= function(){
+        var t = document.documentElement.scrollTop||document.body.scrollTop;
+        if(t>=400){
+            $backTop.style.display="block";
+        }else{
+            $backTop.style.display="none";
+        }
     }
 
 
