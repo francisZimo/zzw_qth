@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px){
+    .head-function .container li{
+        width:33%;
+    }
     .signUp-online{
         height:40px;
     }
@@ -6,10 +9,11 @@
         width:50%;
         line-height:40px ;
     }
-    .signUp-online li:first-child::after{
+    .signUp-online li::after{
         height:30px;
         top:5px;
     }
+
     .content-title-wrapper{
         margin-top:15px;
         margin-bottom:15px;
@@ -38,15 +42,10 @@
     }
     .newsT-publisher{
         padding-right:5px;
+        padding-left:5px;
     }
     .new-module{
         margin-top: 20px;
-    }
-    .newsT-content{
-        height:400px;
-    }
-    .news-tracking{
-        height:440px;
     }
     .newT-tip{
         height: 40px;

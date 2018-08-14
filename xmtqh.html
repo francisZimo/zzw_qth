@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="multipart/form-data; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer"  content="webkit">
+    <meta name="keywords" content="智招网 招才引智 政府招商引资 企业投资融资 人才创新创业 大数据招商 VR招商">
+    <meta name="description" content="地方政府、企业、人才智慧对接的大数据VR云平台。本平台拥有线上独有的智慧招商云空间和线下庞大的专业服务团队，利用独有的核心“VR招商云”技术和海量的大数据，通过365天24小时在线，在三个维度实现“政府·企业·人才”、“项目·资金·知本”、“政务·商务·双创”信息互连互通、资源优化匹配、供需智慧对接，促进政府精准招商引资、企业科学投资融资、人才高效创新创业。">
+    <title>第二十届中国国际投资贸易洽谈会</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/cd-top.css">
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=e0fa1a9286827251c84ccddfaebda47c"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <style>
+        .qth-marker{
+            position:relative;
+        }
+        .qth-marker-title{
+            display: inline-block;
+            font-size:18px;
+            font-weight: 700;;
+            color:#2078d9;
+            position:absolute;
+            top:-49px;
+            left:0;
+            margin-left: -150px;
+            width:300px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .qth-marker-location{
+            margin-left:-9px;
+            margin-top:-19px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <header style="width:100%;">
+        <div class="head-banner">
+            <img src="./img/banner.jpg" alt="智招网-洽谈会">
+        </div>
+    </header>
+    <div class="head-function">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="signUp-online">
+                        <ul class="signUp-lists">
+                            <li><a href="./inv-form.html" target="_blank" >邀请函</a></li>
+                            <li><a href="./inv-form-p.html" target="_blank">参会报名</a></li>
+                            <!--<li><a href="https://www.wenjuan.com/s/N3iiYz" target="_blank">协办单位申请</a></li>-->
+                            <li><a href="./inv-form-c.html" target="_blank">路演申请</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" content-title-wrapper">
+                    <div class="content-title">
+                        <p class="title-name">
+                            推介会介绍
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="qth-img">
+                    <img class="qth-img-bottom"  src="./img/qiatanhui.jpg" alt="智招网-洽谈会">
+                    <img class="qth-img-over hidden-xs" src="./img/qiatanhui-over_03.jpg" alt="智招网-洽谈会">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="qth-description">
+                    <p>
+                        中国国际投资贸易洽谈会（简称“投洽会”）是经中华人民共和国国务院批准，由商务部与联合国贸发会议、联合国工发组织、世界贸易组织、经济合作与发展组织、世界银行国际金融公司、世界投资促进机构协会等，于2018年9月8日至11日在厦门联合举办的全球规模最大的投资性博览会。以“突出全国性和国际性，突出投资洽谈和投资政策宣传，突出国家区域经济协调发展，突出对台经贸交流”为主要特色，是中国目前唯一以促进双向投资为目的的国际投资促进活动。
+                    </p>
+                    <p>
+                        以贯彻新发展理念、融入“一带一路”、促进双向投资为主题，围绕“一带一路”建设、金砖国家领导人厦门会晤成果、改革开放40周年等内容，推动形成全面开放新格局。
+                    </p>
+                    <p>
+                        本投洽会将有来自超过110个国家和地区的工商团组、10多万客商参会,将推荐2
+                        万多个投资项目。
+                    </p>
+                    <p>
+                        为了帮助地方政府和全国园区更好的利用中国国际投资贸易洽谈会开展招商引资工作，整合和利用商务部在全球范围内的投资促进优势，有效促进政府、园区、企业间的交流与对接，加大重点项目的全球推广力度，提升招商引资的成功率。商务部投资促进事务局将于2018年9月9日，在厦门国际会展中心举办“商务部投资促进事务局重点项目推介会”。本次推介会将邀请地方政府、园区、企业及各类投资机构、金融机构、券商、投资银行、投资中介机构和国内外知名企业代表，进行投资环境推介、项目路演和面对面洽谈。与此同时，推介会场外还设有项目展台，便于政府、园区、企业开展多对多的对接活动。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row videoNews-additional">
+            <div class="col-md-12">
+                <div class=" content-title-wrapper">
+                    <div class="content-title">
+                        <p class="title-name">
+                            视频新闻
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="videoNews-box" >
+                    <video poster="http://img.project.fdi.gov.cn//43/1200000093/%E7%95%99%E8%A8%80%E6%9D%BF%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/201705231128068181631.jpg" src="http://oyz6yfw20.bkt.clouddn.com/video/tqh%E9%A1%B9%E7%9B%AE%E8%B7%AF%E6%BC%94-%E6%88%90%E5%93%81.mp4" controls="controls">
+                        您的浏览器不支持 video 标签。
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" content-title-wrapper">
+                    <div class="content-title">
+                        <p class="title-name">
+                            现场图片
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div :class="[index>=9?'hidden-xs':'','col-md-3']" v-for="(item,index) in livePicture" :key="index" >
+                <div class="oldNews">
+                    <a :href="item.link" target="_blank" :title="item.title">
+                        <div class="oldNews-content">
+                            <img :src="item.imgUrl" alt="智招网-往期回顾">
+                        </div>
+                        <div class="oldNews-title ellipsis" :title="item.title">
+                            {{item.title}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row new-module" >
+            <div class="col-md-8">
+                <div class="news-tracking">
+                    <div class="newsT-title">
+                        <p class="newT-tip">
+                            新闻跟踪
+                        </p>
+                    </div>
+                    <div class="newsT-content">
+                        <ul class="newsT-content-ul">
+                            <li v-for="(item,index) in newsTracking" :key="(index)">
+                                <a :href="item.link" :title="item.title" target="_blank" >
+                                    <p class="newsT-newsTitle ellipsis">{{item.title}}</p>
+                                    <span class="newsT-publisher ellipsis">{{item.unit}}发布</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="media-support">
+                    <div class="newsT-title">
+                        <p class="newT-tip">
+                            媒体支持
+                        </p>
+                    </div>
+                    <div class="nT-content-wrapper">
+                        <span>人民日报社</span>
+                        <span>新华社</span>
+                        <span>经济日报</span>
+                        <span>光明日报</span>
+                        <span>中国企业报</span>
+                        <span>中央电视台</span>
+                        <span>人民网</span>
+                        <span>新华网</span>
+                        <span>中央人民广播电台</span>
+                        <span>中国国际广播电台</span>
+                        <span>中新社</span>
+                        <span>中国经济导报</span>
+                        <span>中国经济时报</span>
+                        <span>中国日报</span>
+                        <span>中国贸易报</span>
+                        <span>国际商报</span>
+                        <span>央视网</span>
+                        <span>中国经济网</span>
+                        <span>中国新闻网</span>
+                        <span>光明网</span>
+                        <span>凤凰通讯社</span>
+                        <span>凤凰卫视</span>
+                        <span>香港卫视</span>
+                        <span>一点资讯</span>
+                    </div>
+                </div>
+                <div class="attend-unit">
+                    <div class="newsT-title">
+                        <p class="newT-tip">
+                            参会机构
+                        </p>
+                    </div>
+                    <div class="nT-content-wrapper">
+                        <span>政府招商引资部门（招商局、投资促进局、园区）</span>
+                        <span>跨国公司</span>
+                        <span>央企及地方国企</span>
+                        <span>大型民营企业</span>
+                        <span>专业投资机构（国内外主流VC、PE）、金融机构、资本市场（国内外证券交易所）</span>
+                        <span>投资服务机构（国内知名律所、会计所、评估公司）</span>
+                        <span>专家学者等出席</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <ul class="unitWraper">
+                    <li>
+                        <p class="unitHeadName">主办单位</p>
+                        <div class="unitContent">
+                            <img src="img/swb-logo.jpg" alt="智招网">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="unitHeadName">协办单位</p>
+                        <div class="unitContent">
+                            <a class="click-btn" href="https://www.wenjuan.com/s/N3iiYz" target="_blank">申请成为协办单位</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="unitHeadName">承办单位</p>
+                        <div class="unitContent">
+                            <p class="unit-items">中国国际投资促进中心</p>
+                            <p class="unit-items"><a href="http://www.zhizhaowang.cn/" target="_blank">智招网/中国国际招商引智网</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="unitHeadName">支持单位</p>
+                        <div class="unitContent">
+                            <p class="unit-items">产业转移中心（商务部上海基地）</p>
+                            <p class="unit-items">中国企业报</p>
+                            <p class="unit-items">香港卫视</p>
+                            <a class="click-btn" href="./inv-form-c.html" target="_blank" >申请成为支持单位</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="map-box">
+        <div class=" content-title-wrapper">
+            <div class="content-title">
+                <p class="title-name">
+                    会议地址
+                </p>
+            </div>
+        </div>
+        <div class="map-zone" id="mapZone">
+
+        </div>
+    </div>
+    <footer >
+        <div class="zzw-info">
+            <div class="zzw-map-background"></div>
+            <div class="zzw-info-box">
+                <div class="container " style="height:100%;">
+                    <div class="col-md-8 col-xs-8" style="height:100%;">
+                        <div class="zzw-info-detail">
+                            <div class="zzw-info-wrapper zzw-info-contact">
+                                <div class="zzw-info-items"><span class="contact-title">联系人</span> <p class="contact-name">&nbsp;:&nbsp;黄先生（13501261050）
+                                    <br>&nbsp; 杨女士（18600966806）</p></div>
+                                <div class="zzw-info-items"><span class="contact-title">电话 </span>&nbsp;:&nbsp; 010-62984189/62980199/56292003</div>
+                                <div class="zzw-info-items"><span class="contact-title">时间 </span>&nbsp;:&nbsp; 2018-09-09 </div>
+                                <div class="zzw-info-items"><span class="contact-title">地点 </span> &nbsp;:&nbsp; 厦门国际会展中心303会议室</div>
+                                <div class="zzw-info-items"><span class="contact-title">备案号</span>&nbsp;:&nbsp; 京ICP备17058693 &nbsp;&nbsp;&nbsp;&nbsp;  京公网安备 11010802025863号</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4" style="height:100%;">
+                        <div class="zzw-info-detail">
+                            <div class="zzw-info-wrapper zzw-code-wrapper">
+                                <div class="zzw-code">
+                                    <p class="zzw-code-tip">关注公众号</p>
+                                    <img src="./img/zzw-code.jpg" alt="智招网-二维码">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-top" id="back-top">
+        <span class="back-top-in"></span>
+    </div>
+</div>
+<script>
+    var app=new Vue({
+        el:'#app',
+        data:{
+            newsTracking:[
+                {title:'深挖项目信息  推进投资合作',unit:'人民网',link:'http://unn.people.com.cn/n1/2016/0910/c14748-28705879.html?from=singlemessage&isappinstalled=0'},
+                {title:'深挖项目信息  推进投资合作 ',unit:'中国贸易新闻网',link:'http://www.myxw.news/html/media/2016/0912/82280.html'},
+
+                {title:'商务部投资促进事务局重点项目推介会在合肥召开',unit:'新华网',link:'http://www.xinhuanet.com/itown/2017-05/19/c_136298439.htm'},
+                {title:'商务部投资促进事务局重点项目推介会在合肥召开',unit:'人民网',link:'http://expo.people.com.cn/n1/2017/0519/c57922-29287540.html'},
+                {title:'中博会商务部重点项目推进会首搭现场展台',unit:'搜狐',link:'http://m.sohu.com/n/493527295/'},
+                {title:'商务部投资促进事务局重点项目推介会在合肥召开（视频）',unit:'香港卫视',link:'http://www.hkstv.tv/?mod=index&do=detail&id=52052&tpl=phone&from=singlemessage&isappinstalled=1'},
+                {title:'中博会商务部重点项目推进会首搭现场展台',unit:'搜狗新闻',link:'http://news.sogou.com/ntcnews?keyword=%C9%CC%CE%F1%B2%BF%D6%D8%B5%E3%CF%EE%C4%BF%CD%C6%BD%F8%BB%E1&clk=2&url=http%3A%2F%2Fah.anhuinews.com%2Fsystem%2F2017%2F05%2F18%2F007626222.shtml&e=1380&g_ut=3&from=resultpage'},
+                {title:'商务部投资促进事务局重点项目推介会在合肥召开',unit:'中国投资指南网',link:'http://www.cipa.gov.cn/1800000346_3_2383_0_7.html?from=singlemessage&isappinstalled=0'},
+                {title:'商务部投资促进事务局重点项目推介会在合肥召开（视频）',unit:'国际商报',link:'http://video.mofcom.gov.cn/'},
+                {title:'中博会商务部重点项目推进会首搭现场展台',unit:'亳州头条',link:'http://m.bozhou.cn/pcarticle/793154'},
+                {title:'创新项目对接 促进中部崛起 ----商务部投资促进事务局重点项目推介会在合肥召开',unit:'一点资讯',link:'https://www.yidianzixun.com/article/0GNztDDj??title_sn=0&utk=25506fg7&appid=yidian&ver=4.4.3.7&f=ios&s=3'},
+            ],
+            livePicture:[
+                {title:'商务部副部长王受文莅临推介会现场',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609181006494933537.jpg',link:'http://www.fdi.gov.cn/1200000072_3_43_0_7.html'},
+                {title:'商务部投资促进事务局副局长 李勇',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290255023320.jpg',link:'http://www.fdi.gov.cn/1200000072_3_22_0_7.html'},
+                {title:'抚州市委常委、市政府副市长 董朝武',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609130441332903066.jpg',link:'http://www.fdi.gov.cn/1200000072_3_25_0_7.html'},
+                {title:'商务部投资促进事务局信息部主任 沈青',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290408394114986.jpg',link:'http://www.fdi.gov.cn/1200000072_3_49_0_7.html'},
+                {title:'中国北京留学人员创业园主任 赵新良',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290351222078813.jpg',link:'http://www.fdi.gov.cn/1200000072_3_46_0_7.html'},
+                {title:'抚州高新区党工委副书记、主任 曾月兴',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609130459430027939.jpg',link:'http://www.fdi.gov.cn/1200000072_3_26_0_7.html'},
+                {title:'宏观经济学家 何学彦',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290359468662318.jpg',link:'http://www.fdi.gov.cn/1200000072_3_47_0_7.html'},
+                {title:'优联资本董事长 王孝华',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140422569725712.jpg',link:'http://www.fdi.gov.cn/1200000072_3_39_0_7.html'},
+                {title:'德国泰乐信律师事务所中国业务总监 赵晖',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140424011665039.jpg',link:'http://www.fdi.gov.cn/1200000072_3_40_0_7.html'},
+                {title:'中观村双创大学校长 宾春宇',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140253152606010.jpg',link:'http://www.fdi.gov.cn/1200000072_3_29_0_7.html'},
+                {title:'中国国际招商引智网董事长 王智邦',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290303134844.jpg',link:'http://www.fdi.gov.cn/1200000072_3_31_0_7.html'},
+                {title:'嘉宾交流',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290404425178380.jpg',link:'http://www.fdi.gov.cn/1200000072_3_48_0_7.html'},
+                {title:'项目路演嘉宾',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290311135951.jpg',link:'http://www.fdi.gov.cn/1200000072_3_30_0_7.html'},
+                {title:'项目路演点评专家 尹应武',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140302021496107.jpg',link:'http://www.fdi.gov.cn/1200000072_3_32_0_7.html'},
+                {title:'会议现场',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140327158472984.jpg',link:'http://www.fdi.gov.cn/1200000072_3_36_0_7.html'},
+                {title:'项目对接区一',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140328552131025.jpg',link:'http://www.fdi.gov.cn/1200000072_3_48_0_7.html'},
+            ],
+            videoList:[
+                {title:'商务部投资促进事务所重点项目推介会',imgUrl:'http://img.project.fdi.gov.cn//43/1200000093/%E7%95%99%E8%A8%80%E6%9D%BF%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/201705231128068181631.jpg',link:'http://www.fdi.gov.cn/1200000093_3_39_0_7.html'},
+            ]
+        }
+    })
+
+    function isPc(){  //判断是否为pc端
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    var slidesNumber=2;
+    var map = new AMap.Map('mapZone',{
+        zoom:15,//级别
+        center: [118.183694,24.467131],//中心点坐标
+//        viewMode:'3D'//使用3D视图
+    });
+    updateMarker();
+    function updateMarker() {
+        var marker = new AMap.Marker({
+            icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+            position: [118.183694,24.467131]
+        });
+        marker.setMap(map);
+        // 自定义点标记内容
+        var markerContent = document.createElement("div");
+        markerContent.className='qth-marker';
+        // 点标记中的文本
+        var markerSpan = document.createElement("span");
+        markerSpan.className = 'qth-marker-title';
+        markerSpan.innerHTML = "厦门国际会展中心303会议室";
+        markerContent.appendChild(markerSpan);
+        marker.setContent(markerContent); //更新点标记内容
+        // 点标记中的图标
+        var markerImg = document.createElement("img");
+        markerImg.className = "qth-marker-location";
+        markerImg.src = "./img/map-location.png";
+        markerContent.appendChild(markerImg);
+    }
+    var timer  = null;
+    var $backTop= document.getElementById('back-top');
+    $backTop.onclick = function(){
+        cancelAnimationFrame(timer);
+        timer = requestAnimationFrame(function fn(){
+            var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+            if(oTop > 0){
+                document.body.scrollTop = document.documentElement.scrollTop = oTop - 200;
+                timer = requestAnimationFrame(fn);
+            }else{
+                cancelAnimationFrame(timer);
+            }
+        });
+    }
+    window.onscroll= function(){
+        var t = document.documentElement.scrollTop||document.body.scrollTop;
+        if(t>=400){
+            $backTop.style.display="block";
+        }else{
+            $backTop.style.display="none";
+        }
+    }
+
+
+</script>
+</body>
+</html>
