@@ -12,6 +12,12 @@ body,html{
     width:100%;
 
 }
+.client-img{
+    display: inline-block;
+    max-width:100%;
+    height:auto;
+    margin:0 auto
+}
 .videoNews-box video{
     max-width: 100%;
     height:auto;

@@ -1,4 +1,13 @@
 @media screen and (max-width: 768px){
+    body,html{
+        width:100%;
+        overflow-x: hidden;
+    }
+    .client-img{
+        width:90%;
+        height:auto;
+        margin:0 auto
+    }
     .head-function .container li{
         width:33%;
     }

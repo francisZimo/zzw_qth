@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/cd-top.css">
     <link rel="stylesheet" href="./css/invitation.css">
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 </head>
 <body>
 <div id="app">
@@ -115,6 +116,118 @@
     </footer>
 </div>
 <script>
+    function fetchWXParams(url){
+        var xhr= new XMLHttpRequest();
+        xhr.open('GET','http://www.zhizhaowang.cn:8088/index/token?url='+url);
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                var _result=xhr.responseText;
+                var data=JSON.parse(_result).result
+                wxShare(data)
+            }
+        };
+        xhr.send(null)
+    }
+    var locationUrl=encodeURIComponent(location.href.split('#')[0]);
+    fetchWXParams(locationUrl);
+    function wxShare(res){
+        var desc = '中国国际投资贸易洽谈会（简称“投洽会”）是经中华人民共和国国务院批准，由商务部与联合国贸发会议、联合国工发组织、世界贸易组织、经济合作与发展组织、世界银行国际金融公司、世界投资促进机构协会等，于2018年9月8日至11日在厦门联合举办的全球规模最大的投资性博览会。以“突出全国性和国际性，突出投资洽谈和投资政策宣传，突出国家区域经济协调发展，突出对台经贸交流”为主要特色，是中国目前唯一以促进双向投资为目的的国际投资促进活动。';
+        if (res) {
+            wx.config({
+                debug: false,
+                appId: res.appid,
+                timestamp: res.timestamp,
+                nonceStr: res.nonceStr,
+                signature:res.signature,
+                jsApiList: [
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage',
+                    'onMenuShareQQ',
+                    'onMenuShareWeibo',
+                    'onMenuShareQZone'
+                ]
+            });
+            wx.ready(function(){
+                wx.checkJsApi({
+                    jsApiList: [
+                        'onMenuShareTimeline',
+                        'onMenuShareAppMessage',
+                        'onMenuShareQQ',
+                        'onMenuShareWeibo',
+                        'onMenuShareQZone'
+                    ]
+                });
+                /*分享到朋友圈*/
+                wx.onMenuShareTimeline({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oyz6yfw20.bkt.clouddn.com/tqh.jpg',
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                /*分享给朋友*/
+                wx.onMenuShareAppMessage({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oyz6yfw20.bkt.clouddn.com/tqh.jpg',
+                    type: 'link', // 分享类型,music、video或link，不填默认为link
+                    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                wx.onMenuShareQQ({
+                    title:document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oyz6yfw20.bkt.clouddn.com/tqh.jpg',
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                wx.onMenuShareWeibo({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oyz6yfw20.bkt.clouddn.com/tqh.jpg',
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                wx.onMenuShareQZone({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oyz6yfw20.bkt.clouddn.com/tqh.jpg',
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+            });
+        }
+    }
     var timer  = null;
     var $backTop= document.getElementById('back-top');
     $backTop.onclick = function(){
