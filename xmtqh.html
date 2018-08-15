@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/cd-top.css">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=e0fa1a9286827251c84ccddfaebda47c"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <style>
@@ -271,9 +272,11 @@
                     <div class="col-md-8 col-xs-8" style="height:100%;">
                         <div class="zzw-info-detail">
                             <div class="zzw-info-wrapper zzw-info-contact">
-                                <div class="zzw-info-items"><span class="contact-title">联系人</span> <p class="contact-name">&nbsp;:&nbsp;黄先生（13501261050）
-                                    <br>&nbsp; 杨女士（18600966806）</p></div>
-                                <div class="zzw-info-items"><span class="contact-title">电话 </span>&nbsp;:&nbsp; 010-62984189/62980199/56292003</div>
+                                <div class="zzw-info-items"><span class="contact-title">联系人</span> <p class="contact-name">&nbsp;:&nbsp;黄先生（<a href="tel:13501261050">13501261050</a>）
+                                    <br>&nbsp; 杨女士（<a href="tel:18600966806">18600966806</a>）</p></div>
+                                <div class="zzw-info-items"><span class="contact-title">电话 </span>&nbsp;:&nbsp; 010-<a
+                                        href="tel:62984189">62984189</a>/<a href="tel:62980199">62980199</a>/<a
+                                        href="tel:56292003">56292003</a></div>
                                 <div class="zzw-info-items"><span class="contact-title">时间 </span>&nbsp;:&nbsp; 2018-09-09 </div>
                                 <div class="zzw-info-items"><span class="contact-title">地点 </span> &nbsp;:&nbsp; 厦门国际会展中心303会议室</div>
                                 <div class="zzw-info-items"><span class="contact-title">备案号</span>&nbsp;:&nbsp; 京ICP备17058693 &nbsp;&nbsp;&nbsp;&nbsp;  京公网安备 11010802025863号</div>
@@ -300,13 +303,13 @@
     </div>
 </div>
 <script>
+
     var app=new Vue({
         el:'#app',
         data:{
             newsTracking:[
                 {title:'深挖项目信息  推进投资合作',unit:'人民网',link:'http://unn.people.com.cn/n1/2016/0910/c14748-28705879.html?from=singlemessage&isappinstalled=0'},
                 {title:'深挖项目信息  推进投资合作 ',unit:'中国贸易新闻网',link:'http://www.myxw.news/html/media/2016/0912/82280.html'},
-
                 {title:'商务部投资促进事务局重点项目推介会在合肥召开',unit:'新华网',link:'http://www.xinhuanet.com/itown/2017-05/19/c_136298439.htm'},
                 {title:'商务部投资促进事务局重点项目推介会在合肥召开',unit:'人民网',link:'http://expo.people.com.cn/n1/2017/0519/c57922-29287540.html'},
                 {title:'中博会商务部重点项目推进会首搭现场展台',unit:'搜狐',link:'http://m.sohu.com/n/493527295/'},
@@ -322,13 +325,13 @@
                 {title:'商务部投资促进事务局副局长 李勇',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290255023320.jpg',link:'http://www.fdi.gov.cn/1200000072_3_22_0_7.html'},
                 {title:'抚州市委常委、市政府副市长 董朝武',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609130441332903066.jpg',link:'http://www.fdi.gov.cn/1200000072_3_25_0_7.html'},
                 {title:'商务部投资促进事务局信息部主任 沈青',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290408394114986.jpg',link:'http://www.fdi.gov.cn/1200000072_3_49_0_7.html'},
+                {title:'中国国际招商引智网董事长 王智邦',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290303134844.jpg',link:'http://www.fdi.gov.cn/1200000072_3_31_0_7.html'},
                 {title:'中国北京留学人员创业园主任 赵新良',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290351222078813.jpg',link:'http://www.fdi.gov.cn/1200000072_3_46_0_7.html'},
                 {title:'抚州高新区党工委副书记、主任 曾月兴',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609130459430027939.jpg',link:'http://www.fdi.gov.cn/1200000072_3_26_0_7.html'},
                 {title:'宏观经济学家 何学彦',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290359468662318.jpg',link:'http://www.fdi.gov.cn/1200000072_3_47_0_7.html'},
                 {title:'优联资本董事长 王孝华',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140422569725712.jpg',link:'http://www.fdi.gov.cn/1200000072_3_39_0_7.html'},
                 {title:'德国泰乐信律师事务所中国业务总监 赵晖',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140424011665039.jpg',link:'http://www.fdi.gov.cn/1200000072_3_40_0_7.html'},
-                {title:'中观村双创大学校长 宾春宇',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140253152606010.jpg',link:'http://www.fdi.gov.cn/1200000072_3_29_0_7.html'},
-                {title:'中国国际招商引智网董事长 王智邦',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290303134844.jpg',link:'http://www.fdi.gov.cn/1200000072_3_31_0_7.html'},
+                {title:'中关村双创大学校长 宾春宇',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140253152606010.jpg',link:'http://www.fdi.gov.cn/1200000072_3_29_0_7.html'},
                 {title:'嘉宾交流',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290404425178380.jpg',link:'http://www.fdi.gov.cn/1200000072_3_48_0_7.html'},
                 {title:'项目路演嘉宾',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609290311135951.jpg',link:'http://www.fdi.gov.cn/1200000072_3_30_0_7.html'},
                 {title:'项目路演点评专家 尹应武',imgUrl:'http://img.project.fdi.gov.cn//22/1200000072/留言板上传文件/201609140302021496107.jpg',link:'http://www.fdi.gov.cn/1200000072_3_32_0_7.html'},
@@ -340,23 +343,117 @@
             ]
         }
     })
+    function fetchWXParams(url){
+        var xhr= new XMLHttpRequest();
+        xhr.open('GET','http://www.zhizhaowang.cn:8088/index/token?url='+url);
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                var result=xhr.responseText;
+                wxShare(result)
+            }
+        };
+        xhr.send(null)
+    }
+    var locationUrl=location.href;
+    fetchWXParams(locationUrl);
+    function wxShare(res){
+        var desc = '中国国际投资贸易洽谈会（简称“投洽会”）是经中华人民共和国国务院批准，由商务部与联合国贸发会议、联合国工发组织、世界贸易组织、经济合作与发展组织、世界银行国际金融公司、世界投资促进机构协会等，于2018年9月8日至11日在厦门联合举办的全球规模最大的投资性博览会。以“突出全国性和国际性，突出投资洽谈和投资政策宣传，突出国家区域经济协调发展，突出对台经贸交流”为主要特色，是中国目前唯一以促进双向投资为目的的国际投资促进活动。';
+        if (res) {
+            wx.config({
+                debug: false,
+                appId: res.appid,
+                timestamp: res.timestamp,
+                nonceStr: res.nonceStr,
+                signature:res.signature,
+                jsApiList: [
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage',
+                    'onMenuShareQQ',
+                    'onMenuShareWeibo',
+                    'onMenuShareQZone'
+                ]
+            });
+            wx.ready(function(){
+                wx.checkJsApi({
+                    jsApiList: [
+                        'onMenuShareTimeline',
+                        'onMenuShareAppMessage',
+                        'onMenuShareQQ',
+                        'onMenuShareWeibo',
+                        'onMenuShareQZone'
+                    ]
+                });
+                /*分享到朋友圈*/
+                wx.onMenuShareTimeline({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oycyzawaq.bkt.clouddn.com/dWw72vBTwT4o3dY.jpg',
+                    success: function () {
 
-    function isPc(){  //判断是否为pc端
-        var sUserAgent = navigator.userAgent.toLowerCase();
-        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-        var bIsAndroid = sUserAgent.match(/android/i) == "android";
-        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-            return false;
-        } else {
-            return true;
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                /*分享给朋友*/
+                wx.onMenuShareAppMessage({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oycyzawaq.bkt.clouddn.com/dWw72vBTwT4o3dY.jpg',
+                    type: 'link', // 分享类型,music、video或link，不填默认为link
+                    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                wx.onMenuShareQQ({
+                    title:document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oycyzawaq.bkt.clouddn.com/dWw72vBTwT4o3dY.jpg',
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                wx.onMenuShareWeibo({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oycyzawaq.bkt.clouddn.com/dWw72vBTwT4o3dY.jpg',
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+
+                wx.onMenuShareQZone({
+                    title: document.title,
+                    desc: desc,
+                    link: location.href,
+                    imgUrl: 'http://oycyzawaq.bkt.clouddn.com/dWw72vBTwT4o3dY.jpg',
+                    success: function () {
+
+                    },
+                    cancel: function () {
+
+                    }
+                });
+            });
         }
-    };
+    }
     var slidesNumber=2;
     var map = new AMap.Map('mapZone',{
         zoom:15,//级别

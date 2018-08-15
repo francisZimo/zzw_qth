@@ -361,6 +361,9 @@ footer{
     color:#fff;
     font-size:16px;
 }
+.zzw-info-items a{
+    color:#fff;
+}
 .zzw-info-items:first-child{
     height:72px;
 }
