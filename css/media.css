@@ -3,6 +3,18 @@
         width:100%;
         overflow-x: hidden;
     }
+    .invitation-box{
+        top:40px;
+    }
+    .signUp-title{
+        margin-top:20px;
+    }
+    .signUp-itemName{
+        margin-bottom:10px;
+    }
+    .oldNews-content img{
+        height:200px;
+    }
     .client-img{
         width:90%;
         height:auto;
@@ -13,6 +25,7 @@
     }
     .signUp-online{
         height:40px;
+        font-size: 15px;
     }
     .signUp-online li{
         width:50%;

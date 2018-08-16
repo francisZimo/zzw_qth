@@ -12,6 +12,17 @@ body,html{
     width:100%;
 
 }
+.old-period{
+    width:180px;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 24px;
+    background-color:#104387;
+    margin:32px auto 0;
+    color:#fff;
+
+}
 .client-img{
     display: inline-block;
     max-width:100%;
@@ -173,7 +184,7 @@ body,html{
 }
 .oldNews-content{
     width:100%;
-    height:140px;
+    height:173px;
     overflow:hidden;
 }
 .oldNews-content img{
@@ -405,7 +416,8 @@ footer{
 .signUp-lists{
     width:100%;
     height:100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
+
 }
 .signUp-lists a{
     display: inline-block;
@@ -425,6 +437,36 @@ footer{
     position: relative;
     cursor:pointer;
     transition: all 1s;
+}
+.invitation-wrapper:hover .invitation-box{
+    display: block;
+}
+.invitation-box  .invitation-item:hover{
+    color:#efc25d;
+}
+ .invitation-box{
+    display: none;
+    position:absolute;
+    width:260px;
+    top:58px;
+    left:0;
+    z-index:100;
+    background-color: #104387;
+    overflow: hidden;
+}
+.invitation-box .invitation-item{
+    float:left;
+    width:100%;
+    height:45px;
+    line-height: 45px;
+    font-size:16px;
+    text-align: left;
+    text-decoration:none;
+    color:#fff;
+    padding:0 15px;
+}
+.invitation-box .invitation-item:first-child{
+    border-bottom:1px solid rgba(255,255,255,0.3)
 }
 .signUp-lists li:hover{
     text-decoration: underline;
