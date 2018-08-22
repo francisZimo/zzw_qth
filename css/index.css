@@ -465,7 +465,7 @@ footer{
     color:#fff;
     padding:0 15px;
 }
-.invitation-box .invitation-item:first-child{
+.invitation-box .invitation-item{
     border-bottom:1px solid rgba(255,255,255,0.3)
 }
 .signUp-lists li:hover{
